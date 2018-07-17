@@ -9,7 +9,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <docker.image.prefix>springboot</docker.image.prefix>
         <!-- 系统配制 -->
         <project.compiler.encoding>UTF-8</project.compiler.encoding>
         <jdk-version>1.8</jdk-version>
@@ -81,7 +80,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.1.0</version>
                 <configuration>
-                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+                    <imageName>${project.artifactId}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
