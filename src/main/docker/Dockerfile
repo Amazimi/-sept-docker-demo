@@ -3,7 +3,7 @@ FROM frolvlad/alpine-oraclejdk8:slim
 #VOLUME为挂载路径
 VOLUME /tmp
 #ADD为复制文件到镜像中
-ADD sept-docker-demo.jar app.jar
+ADD sept-docker-demo-1.0-SNAPSHOT.jar app.jar
 #RUN为初始化时运行的命令
 RUN sh -c 'touch /app.jar'
 #ENV为设置环境变量

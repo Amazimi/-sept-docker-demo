@@ -72,8 +72,6 @@
             </plugins>
         </pluginManagement>
 
-        <finalName>sept-docker-demo</finalName>
-
         <plugins>
             <plugin>
                 <groupId>com.spotify</groupId>
